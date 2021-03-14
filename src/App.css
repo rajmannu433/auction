@@ -1,0 +1,150 @@
+.header-top{
+  height:12vh;
+  width: 100%;
+  border: solid 1px black;
+}
+
+.head{
+  height:10vh;
+  width:100%;
+  border: solid 1px black;
+  background-color:  #B11F24;
+  
+}
+
+.basic-information-container{
+  height:50vh;
+  width:100%;
+  /* border: solid 2px black; */
+  margin: 10px;
+  box-shadow: 10px 10px 8px #888888;
+  
+}
+
+.info-form{
+  display: flex;
+  flex-direction: column;
+  
+}
+.input-element{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  
+}
+.labels{
+  margin-left: 10px;
+  margin-top: 3px;
+  font-size: small;
+  width: 35%;
+  
+}
+.inputs{
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 58%;
+  margin-right: 2px;
+}
+
+.tables{
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+  
+  
+}
+
+.reporting-factor-container{
+  height:35vh;
+  width:100%;
+  /* border: solid 2px black; */
+  margin: 10px;
+  box-shadow: 10px 10px 8px #888888;
+  margin-left: 30px;
+  
+}
+
+.categorization-information-container{
+  position: relative;
+  top:-20px;
+  height:35vh;
+  width:100%;
+  /* border: solid 2px black; */
+  margin: 10px;
+  margin-top: -20px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.rules-container{
+  position: relative;
+  top: -110px;
+  height:95vh;
+  width:100%;
+  /* border: solid 2px black; */
+  margin: 10px;
+  box-shadow: 10px 10px 8px #888888;
+  margin-left: 30px;
+
+}
+.added-value-container{
+  position: relative;
+  top: -410px;
+  height:20vh;
+  width:100%;
+  /* border: solid 2px black; */
+  margin: 10px;
+  box-shadow: 10px 10px 8px #888888;
+
+}
+.instruction{
+  position: relative;
+  top: -410px;
+  height:110vh;
+  width:100%;
+  border: solid 2px black;
+  margin: 10px;
+  box-shadow: 10px 10px 8px #888888;
+
+}
+
+.intro{
+  position: relative;
+  top: -10px;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.submission-date{
+  height:80%;
+  width:50%;
+  /* border: solid 2px black; */
+  text-align: center;
+  
+}
+
+.start-time{
+  height:30px;
+  width:50%;
+  position: relative;
+  top: 16px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.input-time{
+  height:30px;
+  width:45%;
+  position: relative;
+  top: 9px;
+  margin-left: 20px;
+  /* background-color: #FF7F50; */
+  /* box-shadow: 3px 2px 1px #FF7F50; */
+  /* border: none; */
+  font-size: large;
+  text-align: center;
+
+}
