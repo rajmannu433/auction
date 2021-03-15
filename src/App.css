@@ -148,3 +148,25 @@
   text-align: center;
 
 }
+
+@media only screen and (max-width:970px){
+  .basic-information-container{
+    height: 100vh;
+  }
+  .reporting-factor-container{
+    height:70vh;
+  }
+  .categorization-information-container{
+    height:60vh;
+  }
+  .added-value-container{
+    top:-250px;
+    height:30vh;
+  }
+  .instruction{
+    top:-250px;
+    height: 220vh;
+  }
+
+
+}
