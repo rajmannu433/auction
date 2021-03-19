@@ -9,10 +9,12 @@ import AddedValue from './components/addedValue'
 import Introduction from './components/instruction'
 import SubDate from './components/subDate'
 import {  useHistory } from 'react-router-dom';
+import Supplier from './components/supplier'
 
 import { MsalAuthenticationTemplate, useMsal, useAccount } from '@azure/msal-react';
 import { InteractionType } from '@azure/msal-browser';
 import { loginRequest } from './authConfig';
+import TopBar from './components/topBar';
 
 import { BrowserRouter as Router, Route, Link, Switch,NavLink ,
   HashRouter } from "react-router-dom";
@@ -37,7 +39,7 @@ const Page = (props) => {
       </header>
 
       <form>
-        <div className="container-fluid row" style={{backgroundColor:'#B11F24'}}>
+        {/* <div className="container-fluid row" style={{backgroundColor:'#B11F24'}}>
           <div className="col">
           <button type="button"  style={{backgroundColor:'#FF8C00',position:'relative',top:5}} class="btn btn-primary btn-lg">Click here to Submit</button>
           </div>
@@ -50,7 +52,8 @@ const Page = (props) => {
             </div>
           </div>
           
-        </div>
+        </div> */}
+        <TopBar />
 
         {/* <div className="container">
           
@@ -116,6 +119,10 @@ const Page = (props) => {
         <li class="nav-item">
           <Link class="nav-link active" aria-current="page" to="/rules">Rules</Link>
         </li>
+
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" to="/supplier">Supplier</Link>
+        </li>
        
         
       </ul>
@@ -129,7 +136,7 @@ const Page = (props) => {
         
         
         <Switch>
-        
+        <Route path="/supplier"><Supplier/></Route>
         <Route path="/rules"><Rules/></Route>
         <Route path="/" ><Home/></Route> 
         

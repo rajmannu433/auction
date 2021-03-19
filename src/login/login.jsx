@@ -9,6 +9,9 @@ import {
 } from '@azure/msal-react';
 import ABILogo from '../ab inbev.png'
 import { Button } from 'react-bootstrap';
+import TopBar from '../components/topBar';
+import Header from '../components/header';
+import AcoeLogo from '../acoe_logo.png'
 
 
 const Login = () => {
@@ -26,15 +29,22 @@ const Login = () => {
     return (
         !isAuthenticated && (
             <div className="login-page">
+                <div className="container-fluid" style={{height:'10vh'}}>
+                    <Header/>
+                </div>
+                <div className="container-fluid" style={{height:'20vh'}}>
+                        <TopBar/>
+                </div>
                 <div className="container">
+                    
                     <div className="row">
                         <div className="col col-login mx-auto">
                             <div className="text-center mb-6">
                                 <img
-                                    src={ABILogo}
+                                    src={AcoeLogo}
                                     className="h-3"
                                     alt="AB InBev Logo"
-                                    style={{ paddingRight: '0px' }}
+                                    style={{ height:'50vh' }}
                                 />
                                 
                             </div>
