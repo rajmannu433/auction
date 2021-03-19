@@ -9,7 +9,8 @@ import AddedValue from './components/addedValue'
 import Introduction from './components/instruction'
 import SubDate from './components/subDate'
 import {  useHistory } from 'react-router-dom';
-import Supplier from './components/supplier'
+import Supplier from './components/supplier';
+import Lot from './components/lot';
 
 import { MsalAuthenticationTemplate, useMsal, useAccount } from '@azure/msal-react';
 import { InteractionType } from '@azure/msal-browser';
@@ -123,6 +124,10 @@ const Page = (props) => {
         <li class="nav-item">
           <Link class="nav-link active" aria-current="page" to="/supplier">Supplier</Link>
         </li>
+
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" to="/lots">Lot Available</Link>
+        </li>
        
         
       </ul>
@@ -136,6 +141,7 @@ const Page = (props) => {
         
         
         <Switch>
+        <Route path="/lots"><Lot/></Route>   
         <Route path="/supplier"><Supplier/></Route>
         <Route path="/rules"><Rules/></Route>
         <Route path="/" ><Home/></Route> 

@@ -141,12 +141,12 @@ class Supplier extends React.Component {
           <table className="table table-hover" style={{marginTop:20,marginBottom:10}} >
             <thead style={{backgroundColor:"#B11F24"}}>
               <tr>
-                <th  style={{color:"white",width:'15%'}} >Company Name Registered in Ariba System</th>
-                <th style={{color:"white",width:'10%'}}>Contact</th>
-                <th style={{color:"white",width:'20%'}}>Email Address -Primary User</th>
-                <th style={{color:"white"}}>Phone / Cell number -Primary User</th>
-                <th style={{color:"white"}}>Can supplier Speak English</th>
-                <th style={{color:"white"}}>Whether suplier has  registered  in Ariba</th>
+                <th  style={{color:"white",width:'15%',textAlign:'center'}} >Company Name Registered in Ariba System</th>
+                <th style={{color:"white",width:'10%',textAlign:'center'}}>Contact</th>
+                <th style={{color:"white",width:'20%',textAlign:'center'}}>Email Address -Primary User</th>
+                <th style={{color:"white",textAlign:'center'}}>Phone / Cell number -Primary User</th>
+                <th style={{color:"white",textAlign:'center'}}>Can supplier Speak English</th>
+                <th style={{color:"white",textAlign:'center'}}>Whether suplier has  registered  in Ariba</th>
               </tr>
             </thead>
   
