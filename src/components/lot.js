@@ -1,4 +1,5 @@
 import React,{useEffect,useState} from 'react';
+import Sups from './supsIniBid';
 
 
 class Lot extends React.Component {
@@ -86,6 +87,12 @@ class Lot extends React.Component {
       this.setState(newLots);
       console.log(this.state.lots);
     };
+
+    handleChange(event) {
+        this.setState({value: event.target.value});
+      }
+
+
     render() {
   
       return (
@@ -168,6 +175,8 @@ class Lot extends React.Component {
   class ProductRow extends React.Component {
     onDelEvent() {
       this.props.onDelEvent(this.props.lot);
+
+      
   
     }
     render() {
@@ -237,37 +246,8 @@ class Lot extends React.Component {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <table class="table  table-striped table-hover">
-                        <thead style={{backgroundColor:"#B11F24"}}>
-                            <tr>
-                            <th scope="col"></th>
-                            <th scope="col" style={{color:"white",textAlign:'center'}}>Supplier Name</th>
-                            <th scope="col" style={{color:"white",textAlign:'center'}}>Intial Bid</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row">1</th>
-                            <td>Granit</td>
-                            <td>345</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>Richardson</td>
-                            <td>335</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">3</th>
-                            <td>Glencore</td>
-                            <td>334</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">4</th>
-                            <td>Supertime</td>
-                            <td>330</td>
-                            </tr>
-                        </tbody>
-                        </table>
+                    <Sups />
+                        
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
